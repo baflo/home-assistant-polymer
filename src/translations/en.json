@@ -721,6 +721,7 @@
       "quick-bar": {
         "commands": {
           "reload": {
+            "all": "[%key:ui::panel::developer-tools::tabs::yaml::section::reloading::all%]",
             "reload": "[%key:ui::panel::developer-tools::tabs::yaml::section::reloading::reload%]",
             "core": "[%key:ui::panel::developer-tools::tabs::yaml::section::reloading::core%]",
             "group": "[%key:ui::panel::developer-tools::tabs::yaml::section::reloading::group%]",
@@ -832,10 +833,11 @@
         "settings": "Settings",
         "edit": "Edit entity",
         "details": "Details",
-        "info": "Info",
+        "back_to_info": "Back to info",
         "related": "Related",
         "history": "History",
         "logbook": "Logbook",
+        "device_info": "Device info",
         "last_changed": "Last changed",
         "last_updated": "Last updated",
         "show_more": "Show more",
@@ -2130,7 +2132,7 @@
                 },
                 "time": {
                   "type_value": "Fixed time",
-                  "type_input": "Value of a date/time helper",
+                  "type_input": "Value of a date/time helper or timestamp-class sensor",
                   "label": "Time",
                   "at": "At time",
                   "mode": "Mode"
@@ -3266,6 +3268,8 @@
         "thread": {
           "other_networks": "Other networks",
           "my_network": "My network",
+          "no_preferred_network": "You don't have a preferred network yet.",
+          "add_open_thread_border_router": "Add an OpenTread border router",
           "no_border_routers": "No border routers found",
           "border_routers": "{count} border {count, plural,\n  one {router}\n  other {routers}\n}",
           "managed_by_home_assistant": "Managed by Home Assistant",
@@ -4194,7 +4198,8 @@
                 "5minute": "5 Minutes"
               },
               "pick_statistic": "Add a statistic",
-              "picked_statistic": "Statistic"
+              "picked_statistic": "Statistic",
+              "hide_legend": "Hide legend"
             },
             "statistic": {
               "name": "Statistic",
@@ -4897,6 +4902,7 @@
                 "invalid": "Configuration invalid!"
               },
               "reloading": {
+                "all": "All YAML configuration",
                 "heading": "YAML configuration reloading",
                 "introduction": "Some parts of Home Assistant can reload without requiring a restart. Clicking one of the options below will unload their current YAML configuration and load the new one.",
                 "reload": "{domain}",
